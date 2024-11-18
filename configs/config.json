@@ -1,0 +1,23 @@
+{
+  "databases": [
+    {
+      "db_name": "生产数据库",
+      "host": "192.168.1.100",
+      "port": 1521,
+      "service_name": "PROD",
+      "username": "system",
+      "password": "your_password",
+      "enable": true
+    }
+  ],
+  "monitor": {
+    "interval": 30,
+    "timeout": 10,
+    "max_concurrent": 100,
+    "batch_size": 50
+  },
+  "alert": {
+    "initial_interval": 60,
+    "max_interval": 3600
+  }
+}
